@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!--NAVIGATION BAR-->
+    <nav class="topbar">
+      <!--TOPBAR BUTTONS-->
+      <div class="topbar-element">
+        <a href="" class="menu-button">HOME</a>
+      </div>
+
+      <div class="topbar-element">
+        <a href="" class="menu-button">PORTFOLIO</a>
+      </div>
+
+      <div class="topbar-element">
+        <a href="" class="menu-button">BEST</a>
+      </div>
+
+      <div class="topbar-element">
+        <a href="" class="menu-button">GOALS</a>
+      </div>
+
+      <div class="topbar-element">
+        <a href="" class="menu-button">CONTACT</a>
+      </div>
+
+      <!--TOPBAR CONTENT-->
+      <div class="page-title">
+        <h1>NcDev</h1>
+      </div>
+
+      <div class="menu-icon">
+        <a href="#" onclick="toggleSideMenu()">
+          <img src="img/menu-icon.png" class="icon" />
+        </a>
+      </div>
+    </nav>
+
+    <!--SIDEBAR-->
+    <div class="sidebar" id="side-nav">
+      <a href="#">HOME</a>
+      <a href="#">HOME</a>
+      <a href="#">HOME</a>
+      <a href="#">HOME</a>
+    </div>
+
+    <!--PAGE CONTENT-->
+    <div class="content">
+      <div class="title-fill">
+        <h3>Welcome to the art of</h3>
+        <h1>GAME DESIGN.</h1>
+        <p>
+          Unleash your creativity in unreal worlds with unlimited possibilities.
+          Many have crossed this path before you, and are now running a
+          succesful carreer in the game industry.
+        </p>
+      </div>
+
+      <div class="content-fill">
+        <div class="content-info">
+          <h1 class="content-info-header">VIEW MORE</h1>
+          <p class="content-info-text">
+            My sites covers almost everything there is to know about game
+            design. Immerse yourself into a world of psychology and the human
+            brain, viewing my past work, my goals, and project of which I think
+            have great potential and are capable of being in the top 10 most
+            well designed games ever.
+          </p>
+        </div>
+
+        <div class="img-buttons">
+          <div class="img-button"></div>
+        </div>
+      </div>
+
+      <div class="footer-fill"></div>
+    </div>
+
+    <script>
+      function toggleSideMenu() {
+        var menu = document.getElementById("side-nav");
+
+        var open = menu.style.width == "250px";
+        console.log(open);
+        console.log(menu.style.width);
+        if (open == true) {
+          menu.style.width = "0px";
+        } else {
+          menu.style.width = "250px";
+        }
+      }
+    </script>
+  </body>
+</html>
